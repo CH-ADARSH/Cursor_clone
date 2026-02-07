@@ -2,15 +2,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "CursorGothicRegular";
 }
 body {
   background-color: #14120b;
   color: #fff;
-  /* height: 100vh; */
-  /* margin-left: 3rem;
-  margin-right: 3rem; */
-  /* width: screen; */
+}
+
+@font-face {
+  font-family: CursorGothicItalic;
+  src: url("CursorGothic_BoldItalic-s.p.036859cb.woff2");
+}
+@font-face {
+  font-family: CursorGothicRegular;
+  src: url("CursorGothic_Regular-s.p.a361088d.woff2");
 }
 
 header {
@@ -30,6 +35,10 @@ header {
   /* border: 2px solid red; */
   width: 95px;
   display: flex;
+}
+
+.logo svg g {
+  font-family: "CursorGothicItalic";
 }
 
 .links {
@@ -553,6 +562,12 @@ main {
 
 .recent-text {
   padding: 28px;
+}
+.recent-text H1 {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  left: 0;
 }
 .recent-highlight h1 {
   font-weight: 400;
